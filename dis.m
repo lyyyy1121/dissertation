@@ -70,7 +70,7 @@ for executionIndex = 1:numExecutions
 
         end
     end
-    fprintf('第%d次了\n', numMaps*(executionIndex-1)+mapIndex);
+
     overallAvgPathLength = mean(avgPathLengths);
     fprintf('Overall Average Path Length: %.2f meters\n', overallAvgPathLength);
 end
