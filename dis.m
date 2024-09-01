@@ -1,9 +1,10 @@
 clc;
 clear;
 
-numExecutions = 8; % 执行次数
-numMaps = 7; % 每次生成的地图数量
-minDistance = 50; % 最小距离
+numExecutions = 8; % Number of executions
+numMaps = 7; % Number of maps generated each time
+minDistance = 50; % Minimum distance
+
 result = zeros(10, 50);
 for executionIndex = 1:numExecutions
     rng('shuffle');
@@ -647,7 +648,7 @@ if (solnInfo1.IsPathFound && solnInfo2.IsPathFound && solnInfo3.IsPathFound)
     n = length(goalPoints) - 3;
     k=mode(maxProbGoals(1:n));
     fprintf(' Max Probability Goal Index = %d\n', k);
-    % 运行第二次路径规划
+ 
     
 end
 end
